@@ -1,0 +1,1110 @@
+{% load static %}<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+    <meta charset="UTF-8">
+    <title>MadBop &#8211; Get bopping to the music!</title>
+    <!-- Required meta tags -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--<meta name="description" content="web portfolio" />
+    <meta name="keywords" content="resume, cv, portfolio" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />    
+    <meta name='robots' content='max-image-preview:large' />
+    <link rel="alternate" type="application/rss+xml" title="MadBop &raquo; Feed" href="https://www.madbop.com/feed/" />
+    <link rel="alternate" type="application/rss+xml" title="MadBop &raquo; Comments Feed" href="https://www.madbop.com/comments/feed/" />
+
+    <!--<link rel="icon" href="{% static 'assets/images/icon.png' %}">-->
+    <link rel="icon" href="https://www.madbop.com/storage/2021/04/cropped-MadBop-Logo-1-32x32.png" sizes="32x32" />
+    <link rel="icon" href="https://www.madbop.com/storage/2021/04/cropped-MadBop-Logo-1-192x192.png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="https://www.madbop.com/storage/2021/04/cropped-MadBop-Logo-1-180x180.png" />
+    <meta name="msapplication-TileImage" content="https://www.madbop.com/storage/2021/04/cropped-MadBop-Logo-1-270x270.png" />
+
+    <style type="text/css">div.nsl-container[data-align="left"] {
+        text-align: left;
+        }
+        
+        div.nsl-container[data-align="center"] {
+            text-align: center;
+        }
+        
+        div.nsl-container[data-align="right"] {
+            text-align: right;
+        }
+        
+        
+        div.nsl-container .nsl-container-buttons a {
+            text-decoration: none !important;
+            box-shadow: none !important;
+            border: 0;
+        }
+        
+        div.nsl-container .nsl-container-buttons {
+            display: flex;
+            padding: 5px 0;
+        }
+        
+        div.nsl-container-block .nsl-container-buttons {
+            flex-flow: column;
+            align-items: center;
+        }
+        
+        div.nsl-container-block .nsl-container-buttons a {
+            flex: 1 1 auto;
+            display: block;
+            margin: 5px 0;
+            max-width: 280px;
+            width: 100%;
+        }
+        
+        div.nsl-container-inline {
+            margin: -5px;
+            text-align: left;
+        }
+        
+        div.nsl-container-inline .nsl-container-buttons {
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        div.nsl-container-inline .nsl-container-buttons a {
+            margin: 5px;
+            display: inline-block;
+        }
+        
+        div.nsl-container-grid .nsl-container-buttons {
+            flex-flow: row;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        
+        div.nsl-container-grid .nsl-container-buttons a {
+            flex: 1 1 auto;
+            display: block;
+            margin: 5px;
+            max-width: 280px;
+            width: 100%;
+        }
+        
+        @media only screen and (min-width: 650px) {
+            div.nsl-container-grid .nsl-container-buttons a {
+                width: auto;
+            }
+        }
+        
+        div.nsl-container .nsl-button {
+            cursor: pointer;
+            vertical-align: top;
+            border-radius: 4px;
+        }
+        
+        div.nsl-container .nsl-button-default {
+            color: #fff;
+            display: flex;
+        }
+        
+        div.nsl-container .nsl-button-icon {
+            display: inline-block;
+        }
+        
+        div.nsl-container .nsl-button-svg-container {
+            flex: 0 0 auto;
+            padding: 8px;
+            display: flex;
+            align-items: center;
+        }
+        
+        div.nsl-container svg {
+            height: 24px;
+            width: 24px;
+            vertical-align: top;
+        }
+        
+        div.nsl-container .nsl-button-default div.nsl-button-label-container {
+            margin: 0 24px 0 12px;
+            padding: 10px 0;
+            font-family: Helvetica, Arial, sans-serif;
+            font-size: 16px;
+            line-height: 20px;
+            letter-spacing: .25px;
+            overflow: hidden;
+            text-align: center;
+            text-overflow: clip;
+            white-space: nowrap;
+            flex: 1 1 auto;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            text-transform: none;
+            display: inline-block;
+        }
+        
+        div.nsl-container .nsl-button-google[data-skin="dark"] .nsl-button-svg-container {
+            margin: 1px;
+            padding: 7px;
+            border-radius: 3px;
+            background: #fff;
+        }
+        
+        div.nsl-container .nsl-button-google[data-skin="light"] {
+            border-radius: 1px;
+            box-shadow: 0 1px 5px 0 rgba(0, 0, 0, .25);
+            color: RGBA(0, 0, 0, 0.54);
+        }
+        
+        div.nsl-container .nsl-button-apple .nsl-button-svg-container {
+            padding: 0 6px;
+        }
+        
+        div.nsl-container .nsl-button-apple .nsl-button-svg-container svg {
+            height: 40px;
+            width: auto;
+        }
+        
+        div.nsl-container .nsl-button-apple[data-skin="light"] {
+            color: #000;
+            box-shadow: 0 0 0 1px #000;
+        }
+        
+        div.nsl-container .nsl-button-facebook[data-skin="white"] {
+            color: #000;
+            box-shadow: inset 0 0 0 1px #000;
+        }
+        
+        div.nsl-container .nsl-button-facebook[data-skin="light"] {
+            color: #1877F2;
+            box-shadow: inset 0 0 0 1px #1877F2;
+        }
+        
+        div.nsl-container .nsl-button-apple div.nsl-button-label-container {
+            font-size: 17px;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        }
+        
+        .nsl-clear {
+            clear: both;
+        }
+        
+        /*Button align start*/
+        div.nsl-container-block[data-align="left"] .nsl-container-buttons {
+            align-items: flex-start;
+        }
+        
+        div.nsl-container-block[data-align="center"] .nsl-container-buttons {
+            align-items: center;
+        }
+        
+        div.nsl-container-block[data-align="right"] .nsl-container-buttons {
+            align-items: flex-end;
+        }
+        
+        div.nsl-container-inline[data-align="left"] .nsl-container-buttons {
+            justify-content: flex-start;
+        }
+        
+        div.nsl-container-inline[data-align="center"] .nsl-container-buttons {
+            justify-content: center;
+        }
+        
+        div.nsl-container-inline[data-align="right"] .nsl-container-buttons {
+            justify-content: flex-end;
+        }
+        
+        
+        div.nsl-container-grid[data-align="left"] .nsl-container-buttons {
+            justify-content: flex-start;
+        }
+        
+        div.nsl-container-grid[data-align="center"] .nsl-container-buttons {
+            justify-content: center;
+        }
+        
+        div.nsl-container-grid[data-align="right"] .nsl-container-buttons {
+            justify-content: flex-end;
+        }
+        
+        div.nsl-container-grid[data-align="space-around"] .nsl-container-buttons {
+            justify-content: space-around;
+        }
+        
+        div.nsl-container-grid[data-align="space-between"] .nsl-container-buttons {
+            justify-content: space-between;
+        }
+    </style>
+
+    <!-- Google Font-->
+    <!--
+    <link href="http://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    Font Awesome
+    <link rel="stylesheet" href="{% static 'assets/icons/font-awesome-4.7.0/css/font-awesome.min.css' %}">
+    Bootstrap CSS 
+    <link rel="stylesheet" href="{% static 'assets/plugins/css/bootstrap.min.css' %}">
+    Animate CSS
+    <link rel="stylesheet" href="{% static 'assets/plugins/css/animate.css' %}">
+    Owl Carousel CSS
+    <link rel="stylesheet" href="{% static 'assets/plugins/css/owl.css' %}">
+    Fancybox
+    <link rel="stylesheet" href="{% static 'assets/plugins/css/jquery.fancybox.min.css' %}">
+
+    Custom CSS
+    <link rel="stylesheet" href="{% static 'assets/css/styles.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/responsive.css' %}">
+
+    Colors
+    <link rel="stylesheet" href="{% static 'assets/css/colors/blue-munsell.css' %}" title="blue-munsell">
+
+    <style>
+        h2, h3, h4, li, p {
+            color: #100e17;
+        }
+    </style>-->
+    <link rel="stylesheet" href="{% static 'assets/css/dist-block-library-style.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/dist-block-library-theme.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/7e4609f00f-public-css-cookie-law-info-public.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/7e4609f00f-public-css-cookie-law-info-gdpr.css' %}">    
+    <link rel="stylesheet" href="{% static 'assets/css/96f874eecb-style.css' %}">
+
+    <style id='twenty-twenty-one-style-inline-css'>
+        :root{--global--color-background: #161512;--global--color-primary: #fff;--global--color-secondary: #fff;--button--color-background: #fff;--button--color-text-hover: #fff;--table--stripes-border-color: rgba(240, 240, 240, 0.15);--table--stripes-background-color: rgba(240, 240, 240, 0.15);}
+    </style>
+    <link rel="stylesheet" href="{% static 'assets/css/96f874eecb-assets-css-print.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/f65f29574d-assets-lib-eicons-css-elementor-icons.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/f65f29574d-assets-lib-animations-animations.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/f65f29574d-assets-css-frontend.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/css-post-18.cs' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/ccc473c329-assets-css-frontend.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/css-global.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/css-post-37.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/css-post-50.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/css-post-248.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/771d2e6eaf-public-assets-css-notificationx-public.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/9608.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/f65f29574d-assets-lib-font-awesome-css-fontawesome.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/f65f29574d-assets-lib-font-awesome-css-solid.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/f65f29574d-assets-lib-font-awesome-css-brands.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/9d329671e-assets-css-style-front-end.css' %}">
+
+    <script type="text/javascript">
+        var notificationx = {
+            nonce               : '16b04be9d2',
+            ajaxurl             : 'https://www.madbop.com/wp-admin/admin-ajax.php',
+            notificatons        : [],
+            global_notifications: [],
+            conversions         : [],
+            comments            : [],
+            reviews             : [],
+            stats               : [],
+            form                : [],
+            pro_ext             : [],
+        };
+    </script>
+</head>
+
+<body class="home page-template page-template-elementor_header_footer page page-id-37 custom-background wp-embed-responsive is-dark-theme no-js singular has-main-navigation elementor-default elementor-template-full-width elementor-kit-18 elementor-page elementor-page-37">
+
+		<div data-elementor-type="header" data-elementor-id="50" class="elementor elementor-50 elementor-location-header" data-elementor-settings="[]">
+		<div class="elementor-section-wrap">
+					<nav class="elementor-section elementor-top-section elementor-element elementor-element-24dae352 elementor-section-content-top elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="24dae352" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;sticky&quot;:&quot;top&quot;,&quot;sticky_on&quot;:[&quot;desktop&quot;,&quot;tablet&quot;,&quot;mobile&quot;],&quot;sticky_offset&quot;:0,&quot;sticky_effects_offset&quot;:0}">
+						<div class="elementor-container elementor-column-gap-no">
+					<div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-f5d7d46" data-id="f5d7d46" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-9d3bac8 elementor-widget__width-initial elementor-absolute elementor-widget elementor-widget-image" data-id="9d3bac8" data-element_type="widget" data-settings="{&quot;_position&quot;:&quot;absolute&quot;}" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-image">
+										<img width="500" height="500" src="{% static 'assets/images/MadBop-Logo.png' %}" class="elementor-animation-grow attachment-full size-full image-bg" alt="" loading="lazy" style="width:100%;height:85%;max-width:85px;"  />											</div>
+				</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-47666fdb" data-id="47666fdb" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-239a1d7 elementor-nav-menu__align-left elementor-widget__width-initial elementor-nav-menu--indicator-classic elementor-nav-menu--dropdown-tablet elementor-nav-menu__text-align-aside elementor-nav-menu--toggle elementor-nav-menu--burger elementor-widget elementor-widget-nav-menu" data-id="239a1d7" data-element_type="widget" data-settings="{&quot;layout&quot;:&quot;horizontal&quot;,&quot;toggle&quot;:&quot;burger&quot;}" data-widget_type="nav-menu.default">
+				<div class="elementor-widget-container">
+						<nav role="navigation" class="elementor-nav-menu--main elementor-nav-menu__container elementor-nav-menu--layout-horizontal e--pointer-none"><ul id="menu-1-239a1d7" class="elementor-nav-menu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-37 current_page_item menu-item-930"><a href="/" aria-current="page" class="elementor-item elementor-item-active">Home</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-328"><a href="/jukeboxes" class="elementor-item">Jukeboxes</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-329"><a href="/marketplace" class="elementor-item">Marketplace</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-354"><a href="/community" class="elementor-item">Community</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-353"><a href="/common-questions" class="elementor-item">Common Questions</a></li>
+</ul></nav>
+					<div class="elementor-menu-toggle" role="button" tabindex="0" aria-label="Menu Toggle" aria-expanded="false">
+			<i class="eicon-menu-bar" aria-hidden="true"></i>
+			<span class="elementor-screen-only">Menu</span>
+		</div>
+			<nav class="elementor-nav-menu--dropdown elementor-nav-menu__container" role="navigation" aria-hidden="true"><ul id="menu-2-239a1d7" class="elementor-nav-menu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-37 current_page_item menu-item-930"><a href="https://www.madbop.com/" aria-current="page" class="elementor-item elementor-item-active">Home</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-328"><a href="jukeboxes" class="elementor-item">Jukeboxes</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-329"><a href="https://www.madbop.com/marketplace/" class="elementor-item">Marketplace</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-354"><a href="https://www.madbop.com/community/" class="elementor-item">Community</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-353"><a href="https://www.madbop.com/common-questions/" class="elementor-item">Common Questions</a></li>
+</ul></nav>
+				</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-22e80b5" data-id="22e80b5" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-578a6e3 elementor-button-danger elementor-widget elementor-widget-button" data-id="578a6e3" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-button-wrapper">
+			<a href="https://www.madbop.com/greatlogin/" class="elementor-button-link elementor-button elementor-size-sm elementor-animation-grow" role="button">
+						<span class="elementor-button-content-wrapper">
+						<span class="elementor-button-text">Login</span>
+		</span>
+					</a>
+		</div>
+				</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-a4edca3" data-id="a4edca3" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-19d2b23 elementor-absolute elementor-nav-menu--indicator-classic elementor-nav-menu__text-align-aside elementor-nav-menu--toggle elementor-nav-menu--burger elementor-widget elementor-widget-nav-menu" data-id="19d2b23" data-element_type="widget" data-settings="{&quot;layout&quot;:&quot;dropdown&quot;,&quot;_position&quot;:&quot;absolute&quot;,&quot;toggle&quot;:&quot;burger&quot;}" data-widget_type="nav-menu.default">
+				<div class="elementor-widget-container">
+			<style>.elementor-element-19d2b23{display:none !important}</style>		</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</nav>
+				</div>
+		</div>
+				<div data-elementor-type="wp-post" data-elementor-id="37" class="elementor elementor-37" data-elementor-settings="[]">
+							<div class="elementor-section-wrap">
+							<section class="elementor-section elementor-top-section elementor-element elementor-element-0df603f elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="0df603f" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+						<div class="elementor-container elementor-column-gap-no">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-1bb114b" data-id="1bb114b" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-3867c3a elementor-position-right elementor-vertical-align-top elementor-widget elementor-widget-image-box" data-id="3867c3a" data-element_type="widget" data-widget_type="image-box.default">
+				<div class="elementor-widget-container">
+			<div class="elementor-image-box-wrapper"><figure class="elementor-image-box-img"><img width="500" height="500" src="{% static 'assets/images/blackArtboard.png' %}" class="elementor-animation-grow attachment-full size-full" alt="" loading="lazy" style="width:100%;height:100%;max-width:500px;" /></figure><div class="elementor-image-box-content"><h3 class="elementor-image-box-title"><br>EXPERIENCE A NEW WAY IN OWNING MUSIC</h3><p class="elementor-image-box-description">Music fans from around the world can now experience a new way in collecting music. Own all your favourite artists and experience a new world in purchasing music thanks to the blockchain technology. <br><br>Ever wanted to own a autographed picture or collect that limited edition single/album? Well now you can!</p></div></div>		</div>
+				</div>
+				<div class="elementor-element elementor-element-cb5e4d1 elementor-widget elementor-widget-button" data-id="cb5e4d1" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-button-wrapper">
+			<a href="#" class="elementor-button-link elementor-button elementor-size-sm elementor-animation-grow" role="button">
+						<span class="elementor-button-content-wrapper">
+						<span class="elementor-button-icon elementor-align-icon-left">
+				<i aria-hidden="true" class="fas fa-music"></i>			</span>
+						<span class="elementor-button-text">Start Your Music Collection Today</span>
+		</span>
+					</a>
+		</div>
+				</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-5d979e3 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="5d979e3" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-94150d3" data-id="94150d3" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-4d38e7b elementor-widget elementor-widget-heading" data-id="4d38e7b" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h3 class="elementor-heading-title elementor-size-default">HOW IT WORKS</h3>		</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-4fd32bb elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="4fd32bb" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-132a7c7" data-id="132a7c7" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-3c5101c elementor-widget elementor-widget-heading" data-id="3c5101c" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h5 class="elementor-heading-title elementor-size-default">GRAB A </h5>		</div>
+				</div>
+				<div class="elementor-element elementor-element-e57c1b2 elementor-widget elementor-widget-heading" data-id="e57c1b2" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h3 class="elementor-heading-title elementor-size-default">JUKEBOX</h3>		</div>
+				</div>
+				<div class="elementor-element elementor-element-910c8ca elementor-widget elementor-widget-image" data-id="910c8ca" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-image">
+										<img width="300" height="225" src="{% static 'assets/images/jukeboxgif-300x225.jpg' %}"  class="elementor-animation-grow attachment-medium size-medium" alt="" loading="lazy" srcset="{% static 'assets/images/jukeboxgif-300x225.jpg' %} 300w, https://www.madbop.com/storage/2021/03/jukeboxgif-1024x768.gif 1024w, https://www.madbop.com/storage/2021/03/jukeboxgif-768x576.gif 768w, https://www.madbop.com/storage/2021/03/jukeboxgif-1536x1152.gif 1536w, https://www.madbop.com/storage/2021/03/jukeboxgif-1568x1176.gif 1568w" sizes="(max-width: 300px) 100vw, 300px" style="width:100%;height:75%;max-width:1600px;" />											</div>
+				</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-43c14d7" data-id="43c14d7" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-12265fe elementor-widget elementor-widget-heading" data-id="12265fe" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h5 class="elementor-heading-title elementor-size-default">BUILD YOUR MUSIC</h5>		</div>
+				</div>
+				<div class="elementor-element elementor-element-fa48651 elementor-widget elementor-widget-heading" data-id="fa48651" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h3 class="elementor-heading-title elementor-size-default">COLLECTION</h3>		</div>
+				</div>
+				<div class="elementor-element elementor-element-304f1ac elementor-widget elementor-widget-image" data-id="304f1ac" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-image">
+										<img width="300" height="225" src="{% static 'assets/images/rsz_album-1_2.jpg' %}" class="elementor-animation-grow attachment-medium size-medium" alt="" loading="lazy" srcset="{% static 'assets/images/rsz_album-1_2.jpg' %} 300w, https://www.madbop.com/storage/2021/03/recored-768x576.gif 768w" sizes="(max-width: 300px) 100vw, 300px" style="width:100%;height:75%;max-width:800px;" />											</div>
+				</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-2dcc350" data-id="2dcc350" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-e11cb59 elementor-widget elementor-widget-heading" data-id="e11cb59" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h5 class="elementor-heading-title elementor-size-default">EARN REWARDS FROM</h5>		</div>
+				</div>
+				<div class="elementor-element elementor-element-88d2f92 elementor-widget elementor-widget-heading" data-id="88d2f92" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h3 class="elementor-heading-title elementor-size-default">CHALLENGES</h3>		</div>
+				</div>
+				<div class="elementor-element elementor-element-7d79f04 elementor-widget elementor-widget-image" data-id="7d79f04" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-image">
+										<img width="300" height="225" src="{% static 'assets/images/challenges-MB-300px.jpg' %}" class="elementor-animation-grow attachment-medium size-medium" alt="" loading="lazy" srcset="{% static 'assets/images/challenges-MB-300px.jpg' %} 300w, https://www.madbop.com/storage/2021/03/rewards-768x576.gif 768w" sizes="(max-width: 300px) 100vw, 300px" style="width:100%;height:75%;max-width:800px;" />											</div>
+				</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-8735c3a elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="8735c3a" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+						<div class="elementor-container elementor-column-gap-no">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-7245f0c" data-id="7245f0c" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-05074b5 elementor-widget elementor-widget-heading" data-id="05074b5" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h3 class="elementor-heading-title elementor-size-default">FOLLOW YOUR FAVOURITE ARTISTS</h3>		</div>
+				</div>
+				<div class="elementor-element elementor-element-1113c55 elementor-widget elementor-widget-gallery" data-id="1113c55" data-element_type="widget" data-settings="{&quot;columns&quot;:9,&quot;overlay_title&quot;:&quot;caption&quot;,&quot;image_hover_animation&quot;:&quot;shrink-contained&quot;,&quot;lazyload&quot;:&quot;yes&quot;,&quot;gallery_layout&quot;:&quot;grid&quot;,&quot;columns_tablet&quot;:2,&quot;columns_mobile&quot;:1,&quot;gap&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:10,&quot;sizes&quot;:[]},&quot;gap_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:10,&quot;sizes&quot;:[]},&quot;gap_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:10,&quot;sizes&quot;:[]},&quot;aspect_ratio&quot;:&quot;3:2&quot;,&quot;overlay_background&quot;:&quot;yes&quot;,&quot;content_hover_animation&quot;:&quot;fade-in&quot;}" data-widget_type="gallery.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-gallery__container">
+							<div class="e-gallery-item elementor-gallery-item elementor-animated-content">
+					<div class="e-gallery-image elementor-gallery-item__image" data-thumbnail="https://www.madbop.com/storage/2021/03/Eminem-300x200.jpg" data-width="300" data-height="200" alt="" ></div>
+										<div class="elementor-gallery-item__overlay"></div>
+															<div class="elementor-gallery-item__content">
+													<div class="elementor-gallery-item__title">Eminem</div>
+												</div>
+									</div>
+							<div class="e-gallery-item elementor-gallery-item elementor-animated-content">
+					<div class="e-gallery-image elementor-gallery-item__image" data-thumbnail="https://www.madbop.com/storage/2021/03/yungblud-300x200.jpg" data-width="300" data-height="200" alt="" ></div>
+										<div class="elementor-gallery-item__overlay"></div>
+															<div class="elementor-gallery-item__content">
+													<div class="elementor-gallery-item__title">Yungblud</div>
+												</div>
+									</div>
+							<div class="e-gallery-item elementor-gallery-item elementor-animated-content">
+					<div class="e-gallery-image elementor-gallery-item__image" data-thumbnail="https://www.madbop.com/storage/2021/03/alltimelow-300x200.jpg" data-width="300" data-height="200" alt="" ></div>
+										<div class="elementor-gallery-item__overlay"></div>
+															<div class="elementor-gallery-item__content">
+													<div class="elementor-gallery-item__title">All Time Low</div>
+												</div>
+									</div>
+							<div class="e-gallery-item elementor-gallery-item elementor-animated-content">
+					<div class="e-gallery-image elementor-gallery-item__image" data-thumbnail="https://www.madbop.com/storage/2021/03/TheWeeknd-300x198.jpg" data-width="300" data-height="198" alt="" ></div>
+										<div class="elementor-gallery-item__overlay"></div>
+															<div class="elementor-gallery-item__content">
+													<div class="elementor-gallery-item__title">The Weeknd</div>
+												</div>
+									</div>
+							<div class="e-gallery-item elementor-gallery-item elementor-animated-content">
+					<div class="e-gallery-image elementor-gallery-item__image" data-thumbnail="https://www.madbop.com/storage/2021/03/machinegunkelly-300x300.jpg" data-width="300" data-height="300" alt="" ></div>
+										<div class="elementor-gallery-item__overlay"></div>
+															<div class="elementor-gallery-item__content">
+													<div class="elementor-gallery-item__title">Machine Gun Kelly</div>
+												</div>
+									</div>
+							<div class="e-gallery-item elementor-gallery-item elementor-animated-content">
+					<div class="e-gallery-image elementor-gallery-item__image" data-thumbnail="https://www.madbop.com/storage/2021/03/AJTracey-300x233.jpg" data-width="300" data-height="233" alt="" ></div>
+										<div class="elementor-gallery-item__overlay"></div>
+															<div class="elementor-gallery-item__content">
+													<div class="elementor-gallery-item__title">AJ Tracey</div>
+												</div>
+									</div>
+							<div class="e-gallery-item elementor-gallery-item elementor-animated-content">
+					<div class="e-gallery-image elementor-gallery-item__image" data-thumbnail="https://www.madbop.com/storage/2021/03/drake-300x200.jpg" data-width="300" data-height="200" alt="" ></div>
+										<div class="elementor-gallery-item__overlay"></div>
+															<div class="elementor-gallery-item__content">
+													<div class="elementor-gallery-item__title">Drake</div>
+												</div>
+									</div>
+							<div class="e-gallery-item elementor-gallery-item elementor-animated-content">
+					<div class="e-gallery-image elementor-gallery-item__image" data-thumbnail="https://www.madbop.com/storage/2021/03/annemarie-240x300.jpg" data-width="240" data-height="300" alt="" ></div>
+										<div class="elementor-gallery-item__overlay"></div>
+															<div class="elementor-gallery-item__content">
+													<div class="elementor-gallery-item__title">Anne Marie</div>
+												</div>
+									</div>
+							<div class="e-gallery-item elementor-gallery-item elementor-animated-content">
+					<div class="e-gallery-image elementor-gallery-item__image" data-thumbnail="https://www.madbop.com/storage/2021/03/nickiminaj-300x230.jpg" data-width="300" data-height="230" alt="" ></div>
+										<div class="elementor-gallery-item__overlay"></div>
+															<div class="elementor-gallery-item__content">
+													<div class="elementor-gallery-item__title">Nicki Minaj</div>
+												</div>
+									</div>
+							<div class="e-gallery-item elementor-gallery-item elementor-animated-content">
+					<div class="e-gallery-image elementor-gallery-item__image" data-thumbnail="https://www.madbop.com/storage/2021/03/Miley-Cryus-300x200.jpg" data-width="300" data-height="200" alt="" ></div>
+										<div class="elementor-gallery-item__overlay"></div>
+															<div class="elementor-gallery-item__content">
+													<div class="elementor-gallery-item__title">Miley Cryus</div>
+												</div>
+									</div>
+							<div class="e-gallery-item elementor-gallery-item elementor-animated-content">
+					<div class="e-gallery-image elementor-gallery-item__image" data-thumbnail="https://www.madbop.com/storage/2021/03/stormzy-300x200.jpg" data-width="300" data-height="200" alt="" ></div>
+										<div class="elementor-gallery-item__overlay"></div>
+															<div class="elementor-gallery-item__content">
+													<div class="elementor-gallery-item__title">Stormzy</div>
+												</div>
+									</div>
+							<div class="e-gallery-item elementor-gallery-item elementor-animated-content">
+					<div class="e-gallery-image elementor-gallery-item__image" data-thumbnail="https://www.madbop.com/storage/2021/03/cardieb-300x300.jpg" data-width="300" data-height="300" alt="" ></div>
+										<div class="elementor-gallery-item__overlay"></div>
+															<div class="elementor-gallery-item__content">
+													<div class="elementor-gallery-item__title">Cardie B</div>
+												</div>
+									</div>
+							<div class="e-gallery-item elementor-gallery-item elementor-animated-content">
+					<div class="e-gallery-image elementor-gallery-item__image" data-thumbnail="https://www.madbop.com/storage/2021/03/falloutboy-300x199.jpg" data-width="300" data-height="199" alt="" ></div>
+										<div class="elementor-gallery-item__overlay"></div>
+															<div class="elementor-gallery-item__content">
+													<div class="elementor-gallery-item__title">Fall Out Boy</div>
+												</div>
+									</div>
+							<div class="e-gallery-item elementor-gallery-item elementor-animated-content">
+					<div class="e-gallery-image elementor-gallery-item__image" data-thumbnail="https://www.madbop.com/storage/2021/03/katyperry-300x198.jpg" data-width="300" data-height="198" alt="" ></div>
+										<div class="elementor-gallery-item__overlay"></div>
+															<div class="elementor-gallery-item__content">
+													<div class="elementor-gallery-item__title">Katy Perry</div>
+												</div>
+									</div>
+							<div class="e-gallery-item elementor-gallery-item elementor-animated-content">
+					<div class="e-gallery-image elementor-gallery-item__image" data-thumbnail="https://www.madbop.com/storage/2021/03/tiesto-300x224.jpg" data-width="300" data-height="224" alt="" ></div>
+										<div class="elementor-gallery-item__overlay"></div>
+															<div class="elementor-gallery-item__content">
+													<div class="elementor-gallery-item__title">Tiesto</div>
+												</div>
+									</div>
+							<div class="e-gallery-item elementor-gallery-item elementor-animated-content">
+					<div class="e-gallery-image elementor-gallery-item__image" data-thumbnail="https://www.madbop.com/storage/2021/03/taylorswift-300x200.jpg" data-width="300" data-height="200" alt="" ></div>
+										<div class="elementor-gallery-item__overlay"></div>
+															<div class="elementor-gallery-item__content">
+													<div class="elementor-gallery-item__title">Taylor Swift</div>
+												</div>
+									</div>
+							<div class="e-gallery-item elementor-gallery-item elementor-animated-content">
+					<div class="e-gallery-image elementor-gallery-item__image" data-thumbnail="https://www.madbop.com/storage/2021/03/postmalone-300x300.jpg" data-width="300" data-height="300" alt="" ></div>
+										<div class="elementor-gallery-item__overlay"></div>
+															<div class="elementor-gallery-item__content">
+													<div class="elementor-gallery-item__title">Post Malone</div>
+												</div>
+									</div>
+							<div class="e-gallery-item elementor-gallery-item elementor-animated-content">
+					<div class="e-gallery-image elementor-gallery-item__image" data-thumbnail="https://www.madbop.com/storage/2021/03/brunomars-300x300.jpg" data-width="300" data-height="300" alt="" ></div>
+										<div class="elementor-gallery-item__overlay"></div>
+															<div class="elementor-gallery-item__content">
+													<div class="elementor-gallery-item__title">Bruno mars</div>
+												</div>
+									</div>
+							<div class="e-gallery-item elementor-gallery-item elementor-animated-content">
+					<div class="e-gallery-image elementor-gallery-item__image" data-thumbnail="https://www.madbop.com/storage/2021/03/cleanbandit-300x300.png" data-width="300" data-height="300" alt="" ></div>
+										<div class="elementor-gallery-item__overlay"></div>
+															<div class="elementor-gallery-item__content">
+													<div class="elementor-gallery-item__title">Clean Bandit</div>
+												</div>
+									</div>
+							<div class="e-gallery-item elementor-gallery-item elementor-animated-content">
+					<div class="e-gallery-image elementor-gallery-item__image" data-thumbnail="https://www.madbop.com/storage/2021/03/KSI-300x300.jpg" data-width="300" data-height="300" alt="" ></div>
+										<div class="elementor-gallery-item__overlay"></div>
+															<div class="elementor-gallery-item__content">
+													<div class="elementor-gallery-item__title">KSI</div>
+												</div>
+									</div>
+							<div class="e-gallery-item elementor-gallery-item elementor-animated-content">
+					<div class="e-gallery-image elementor-gallery-item__image" data-thumbnail="https://www.madbop.com/storage/2021/03/nathanevans-300x191.jpg" data-width="300" data-height="191" alt="" ></div>
+										<div class="elementor-gallery-item__overlay"></div>
+															<div class="elementor-gallery-item__content">
+													<div class="elementor-gallery-item__title">Nathan Evans</div>
+												</div>
+									</div>
+							<div class="e-gallery-item elementor-gallery-item elementor-animated-content">
+					<div class="e-gallery-image elementor-gallery-item__image" data-thumbnail="https://www.madbop.com/storage/2021/03/nathandawe.jpg" data-width="220" data-height="220" alt="" ></div>
+										<div class="elementor-gallery-item__overlay"></div>
+															<div class="elementor-gallery-item__content">
+													<div class="elementor-gallery-item__title">Nathan Dawe</div>
+												</div>
+									</div>
+							<div class="e-gallery-item elementor-gallery-item elementor-animated-content">
+					<div class="e-gallery-image elementor-gallery-item__image" data-thumbnail="https://www.madbop.com/storage/2021/03/edsheeran-237x300.jpg" data-width="237" data-height="300" alt="" ></div>
+										<div class="elementor-gallery-item__overlay"></div>
+															<div class="elementor-gallery-item__content">
+													<div class="elementor-gallery-item__title">Ed Sheeran</div>
+												</div>
+									</div>
+							<div class="e-gallery-item elementor-gallery-item elementor-animated-content">
+					<div class="e-gallery-image elementor-gallery-item__image" data-thumbnail="https://www.madbop.com/storage/2021/03/Ava-Max-300x200.jpg" data-width="300" data-height="200" alt="" ></div>
+										<div class="elementor-gallery-item__overlay"></div>
+															<div class="elementor-gallery-item__content">
+													<div class="elementor-gallery-item__title">Ava Max</div>
+												</div>
+									</div>
+							<div class="e-gallery-item elementor-gallery-item elementor-animated-content">
+					<div class="e-gallery-image elementor-gallery-item__image" data-thumbnail="https://www.madbop.com/storage/2021/03/SeanPaul-300x229.png" data-width="300" data-height="229" alt="" ></div>
+										<div class="elementor-gallery-item__overlay"></div>
+															<div class="elementor-gallery-item__content">
+													<div class="elementor-gallery-item__title">Sean Paul</div>
+												</div>
+									</div>
+							<div class="e-gallery-item elementor-gallery-item elementor-animated-content">
+					<div class="e-gallery-image elementor-gallery-item__image" data-thumbnail="https://www.madbop.com/storage/2021/03/maroon5-300x300.jpg" data-width="300" data-height="300" alt="" ></div>
+										<div class="elementor-gallery-item__overlay"></div>
+															<div class="elementor-gallery-item__content">
+													<div class="elementor-gallery-item__title">Maroon 5</div>
+												</div>
+									</div>
+							<div class="e-gallery-item elementor-gallery-item elementor-animated-content">
+					<div class="e-gallery-image elementor-gallery-item__image" data-thumbnail="https://www.madbop.com/storage/2021/03/greenday-300x171.jpg" data-width="300" data-height="171" alt="" ></div>
+										<div class="elementor-gallery-item__overlay"></div>
+															<div class="elementor-gallery-item__content">
+													<div class="elementor-gallery-item__title">Green Day</div>
+												</div>
+									</div>
+							<div class="e-gallery-item elementor-gallery-item elementor-animated-content">
+					<div class="e-gallery-image elementor-gallery-item__image" data-thumbnail="https://www.madbop.com/storage/2021/03/JustinBeiber-300x198.jpg" data-width="300" data-height="198" alt="" ></div>
+										<div class="elementor-gallery-item__overlay"></div>
+															<div class="elementor-gallery-item__content">
+													<div class="elementor-gallery-item__title">Justin Bieber</div>
+												</div>
+									</div>
+							<div class="e-gallery-item elementor-gallery-item elementor-animated-content">
+					<div class="e-gallery-image elementor-gallery-item__image" data-thumbnail="https://www.madbop.com/storage/2021/03/travisscott-300x200.jpg" data-width="300" data-height="200" alt="" ></div>
+										<div class="elementor-gallery-item__overlay"></div>
+															<div class="elementor-gallery-item__content">
+													<div class="elementor-gallery-item__title">Travis Scott</div>
+												</div>
+									</div>
+							<div class="e-gallery-item elementor-gallery-item elementor-animated-content">
+					<div class="e-gallery-image elementor-gallery-item__image" data-thumbnail="https://www.madbop.com/storage/2021/03/ArianaGrande-207x300.jpg" data-width="207" data-height="300" alt="" ></div>
+										<div class="elementor-gallery-item__overlay"></div>
+															<div class="elementor-gallery-item__content">
+													<div class="elementor-gallery-item__title">Ariana Grande</div>
+												</div>
+									</div>
+							<div class="e-gallery-item elementor-gallery-item elementor-animated-content">
+					<div class="e-gallery-image elementor-gallery-item__image" data-thumbnail="https://www.madbop.com/storage/2021/03/ellahenderson-300x229.jpg" data-width="300" data-height="229" alt="" ></div>
+										<div class="elementor-gallery-item__overlay"></div>
+															<div class="elementor-gallery-item__content">
+													<div class="elementor-gallery-item__title">Ella Henderson</div>
+												</div>
+									</div>
+							<div class="e-gallery-item elementor-gallery-item elementor-animated-content">
+					<div class="e-gallery-image elementor-gallery-item__image" data-thumbnail="https://www.madbop.com/storage/2021/03/Dua-Lipa-300x200.jpg" data-width="300" data-height="200" alt="" ></div>
+										<div class="elementor-gallery-item__overlay"></div>
+															<div class="elementor-gallery-item__content">
+													<div class="elementor-gallery-item__title">Dua Lipa</div>
+												</div>
+									</div>
+							<div class="e-gallery-item elementor-gallery-item elementor-animated-content">
+					<div class="e-gallery-image elementor-gallery-item__image" data-thumbnail="https://www.madbop.com/storage/2021/03/foofighters-300x190.jpg" data-width="300" data-height="190" alt="" ></div>
+										<div class="elementor-gallery-item__overlay"></div>
+															<div class="elementor-gallery-item__content">
+													<div class="elementor-gallery-item__title">Foo Fighters</div>
+												</div>
+									</div>
+							<div class="e-gallery-item elementor-gallery-item elementor-animated-content">
+					<div class="e-gallery-image elementor-gallery-item__image" data-thumbnail="https://www.madbop.com/storage/2021/03/loganpaul-300x200.jpg" data-width="300" data-height="200" alt="" ></div>
+										<div class="elementor-gallery-item__overlay"></div>
+															<div class="elementor-gallery-item__content">
+													<div class="elementor-gallery-item__title">Logan Paul</div>
+												</div>
+									</div>
+							<div class="e-gallery-item elementor-gallery-item elementor-animated-content">
+					<div class="e-gallery-image elementor-gallery-item__image" data-thumbnail="https://www.madbop.com/storage/2021/03/chrisbrown-300x198.jpg" data-width="300" data-height="198" alt="" ></div>
+										<div class="elementor-gallery-item__overlay"></div>
+															<div class="elementor-gallery-item__content">
+													<div class="elementor-gallery-item__title">Chris Brown</div>
+												</div>
+									</div>
+							<div class="e-gallery-item elementor-gallery-item elementor-animated-content">
+					<div class="e-gallery-image elementor-gallery-item__image" data-thumbnail="https://www.madbop.com/storage/2021/03/24kgoldn-300x200.jpg" data-width="300" data-height="200" alt="" ></div>
+										<div class="elementor-gallery-item__overlay"></div>
+															<div class="elementor-gallery-item__content">
+													<div class="elementor-gallery-item__title">24Kgoldn</div>
+												</div>
+									</div>
+					</div>
+			</div>
+				</div>
+				<div class="elementor-element elementor-element-9a881f0 elementor-widget elementor-widget-text-editor" data-id="9a881f0" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><p>Plus loads more&#8230;</p></div>
+				</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-7b9903a elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="7b9903a" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-98924f6" data-id="98924f6" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-735b426 elementor-position-right elementor-vertical-align-top elementor-widget elementor-widget-image-box" data-id="735b426" data-element_type="widget" data-widget_type="image-box.default">
+				<div class="elementor-widget-container">
+			<div class="elementor-image-box-wrapper"><figure class="elementor-image-box-img"><img width="300" height="225" src="{% static 'assets/images/JUKEBOX-MB-300PX-4.jpg' %}" class="elementor-animation-grow attachment-medium size-medium" alt="" loading="lazy" srcset="{% static 'assets/images/JUKEBOX-MB-300PX-4.jpg' %} 300w, https://www.madbop.com/storage/2021/03/jukeboxgif-1024x768.gif 1024w, https://www.madbop.com/storage/2021/03/jukeboxgif-768x576.gif 768w, https://www.madbop.com/storage/2021/03/jukeboxgif-1536x1152.gif 1536w, https://www.madbop.com/storage/2021/03/jukeboxgif-1568x1176.gif 1568w" sizes="(max-width: 300px) 100vw, 300px" style="width:100%;height:75%;max-width:1600px;" /></figure><div class="elementor-image-box-content"><h3 class="elementor-image-box-title">HOW TO GET THE MUSIC?</h3><p class="elementor-image-box-description">Grow your collection by buying our jukeboxes on MadBop.<br>Grab a jukebox from your favourite genre or artist, and start growing your collection today!</p></div></div>		</div>
+				</div>
+				<div class="elementor-element elementor-element-c617f60 elementor-align-left elementor-widget elementor-widget-button" data-id="c617f60" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-button-wrapper">
+			<a href="#jukeboxes" class="elementor-button-link elementor-button elementor-size-sm elementor-animation-grow" role="button">
+						<span class="elementor-button-content-wrapper">
+						<span class="elementor-button-text">See The Latest Jukeboxes</span>
+		</span>
+					</a>
+		</div>
+				</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-500462f elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="500462f" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+						<div class="elementor-container elementor-column-gap-no">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-12b3efb" data-id="12b3efb" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-14f9393 elementor-widget elementor-widget-heading" data-id="14f9393" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h3 class="elementor-heading-title elementor-size-default">COLLECT MORE THAN JUST MUSIC</h3>		</div>
+				</div>
+				<div class="elementor-element elementor-element-57ebf75 elementor-skin-coverflow elementor-arrows-yes elementor-pagination-type-bullets elementor-pagination-position-outside elementor-widget elementor-widget-media-carousel" data-id="57ebf75" data-element_type="widget" data-settings="{&quot;skin&quot;:&quot;coverflow&quot;,&quot;show_arrows&quot;:&quot;yes&quot;,&quot;pagination&quot;:&quot;bullets&quot;,&quot;speed&quot;:500,&quot;autoplay&quot;:&quot;yes&quot;,&quot;autoplay_speed&quot;:5000,&quot;loop&quot;:&quot;yes&quot;,&quot;pause_on_hover&quot;:&quot;yes&quot;,&quot;pause_on_interaction&quot;:&quot;yes&quot;,&quot;space_between&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:10,&quot;sizes&quot;:[]},&quot;space_between_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:10,&quot;sizes&quot;:[]},&quot;space_between_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:10,&quot;sizes&quot;:[]}}" data-widget_type="media-carousel.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-swiper">
+			<div class="elementor-main-swiper swiper-container">
+				<div class="swiper-wrapper">
+											<div class="swiper-slide">
+							<a href="/video-moments">		<div class="elementor-carousel-image" style="background-image: url(https://www.madbop.com/storage/2021/04/madbopvideo-1024x1024.jpg)">
+					</div>
+					<div class="elementor-carousel-image-overlay e-overlay-animation-slide-up">
+									Special Video Moments							</div>
+			</a>						</div>
+											<div class="swiper-slide">
+							<a href="/signed-pictures">		<div class="elementor-carousel-image" style="background-image: url(https://www.madbop.com/storage/2021/04/madbopsigned-1024x1022.jpg)">
+					</div>
+					<div class="elementor-carousel-image-overlay e-overlay-animation-slide-up">
+									Signed Pictures							</div>
+			</a>						</div>
+											<div class="swiper-slide">
+							<a href="/redeemable-merchandise">		<div class="elementor-carousel-image" style="background-image: url(https://www.madbop.com/storage/2021/04/madboptshirt-1024x1022.jpg)">
+					</div>
+					<div class="elementor-carousel-image-overlay e-overlay-animation-slide-up">
+									Redeemable Merchandise							</div>
+			</a>						</div>
+									</div>
+															<div class="swiper-pagination"></div>
+																<div class="elementor-swiper-button elementor-swiper-button-prev">
+							<i class="eicon-chevron-left" aria-hidden="true"></i>
+							<span class="elementor-screen-only">Previous</span>
+						</div>
+						<div class="elementor-swiper-button elementor-swiper-button-next">
+							<i class="eicon-chevron-right" aria-hidden="true"></i>
+							<span class="elementor-screen-only">Next</span>
+						</div>
+												</div>
+		</div>
+				</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+						</div>
+					</div>
+				<div data-elementor-type="footer" data-elementor-id="248" class="elementor elementor-248 elementor-location-footer" data-elementor-settings="[]">
+		<div class="elementor-section-wrap">
+					<footer class="elementor-section elementor-top-section elementor-element elementor-element-2317d37 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="2317d37" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-7a60510f" data-id="7a60510f" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<section class="elementor-section elementor-inner-section elementor-element elementor-element-7910c0be elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="7910c0be" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-3e72c806" data-id="3e72c806" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-7340554d elementor-widget elementor-widget-heading" data-id="7340554d" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h4 class="elementor-heading-title elementor-size-default">MADBOP LINKS</h4>		</div>
+				</div>
+				<div class="elementor-element elementor-element-618e6190 elementor-align-left elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="618e6190" data-element_type="widget" data-widget_type="icon-list.default">
+				<div class="elementor-widget-container">
+					<ul class="elementor-icon-list-items">
+							<li class="elementor-icon-list-item">
+					<a href="/terms-of-use">					<span class="elementor-icon-list-text">Terms Of Use</span>
+											</a>
+									</li>
+								<li class="elementor-icon-list-item">
+					<a href="/privacy-policy">					<span class="elementor-icon-list-text">Privacy Policy</span>
+											</a>
+									</li>
+								<li class="elementor-icon-list-item">
+					<a href="/about-us">					<span class="elementor-icon-list-text">About Us</span>
+											</a>
+									</li>
+								<li class="elementor-icon-list-item">
+					<a href="/contact-us">					<span class="elementor-icon-list-text">Contact Us</span>
+											</a>
+									</li>
+						</ul>
+				</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-148805dd" data-id="148805dd" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-20e90956 elementor-widget elementor-widget-heading" data-id="20e90956" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h4 class="elementor-heading-title elementor-size-default">OTHER LINKS</h4>		</div>
+				</div>
+				<div class="elementor-element elementor-element-1a0184ad elementor-align-left elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="1a0184ad" data-element_type="widget" data-widget_type="icon-list.default">
+				<div class="elementor-widget-container">
+					<ul class="elementor-icon-list-items">
+							<li class="elementor-icon-list-item">
+					<a href="/artists">					<span class="elementor-icon-list-text">Artists</span>
+											</a>
+									</li>
+								<li class="elementor-icon-list-item">
+					<a href="/help">					<span class="elementor-icon-list-text">Help</span>
+											</a>
+									</li>
+								<li class="elementor-icon-list-item">
+					<a href="/blog">					<span class="elementor-icon-list-text">Blog</span>
+											</a>
+									</li>
+								<li class="elementor-icon-list-item">
+					<a href="/the-team">					<span class="elementor-icon-list-text">The Team</span>
+											</a>
+									</li>
+						</ul>
+				</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-113814e0" data-id="113814e0" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-3d9d194b elementor-widget elementor-widget-heading" data-id="3d9d194b" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h4 class="elementor-heading-title elementor-size-default">SOCIAL MEDIA</h4>		</div>
+				</div>
+				<div class="elementor-element elementor-element-12364c7 elementor-shape-circle e-grid-align-left elementor-grid-0 elementor-widget elementor-widget-social-icons" data-id="12364c7" data-element_type="widget" data-widget_type="social-icons.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-social-icons-wrapper elementor-grid">
+							<div class="elementor-grid-item">
+					<a class="elementor-icon elementor-social-icon elementor-social-icon-facebook elementor-animation-grow elementor-repeater-item-9be8be9" href="https://www.facebook.com/musicmadbop" target="_blank">
+						<span class="elementor-screen-only">Facebook</span>
+						<i class="fab fa-facebook"></i>					</a>
+				</div>
+							<div class="elementor-grid-item">
+					<a class="elementor-icon elementor-social-icon elementor-social-icon-twitter elementor-animation-grow elementor-repeater-item-3cd43e2" href="https://twitter.com/musicmadbop" target="_blank">
+						<span class="elementor-screen-only">Twitter</span>
+						<i class="fab fa-twitter"></i>					</a>
+				</div>
+							<div class="elementor-grid-item">
+					<a class="elementor-icon elementor-social-icon elementor-social-icon-youtube elementor-animation-grow elementor-repeater-item-61ffcde" href="https://www.youtube.com/channel/UC2jT2p0pl_PJb972Ag5mwug" target="_blank">
+						<span class="elementor-screen-only">Youtube</span>
+						<i class="fab fa-youtube"></i>					</a>
+				</div>
+							<div class="elementor-grid-item">
+					<a class="elementor-icon elementor-social-icon elementor-social-icon-instagram elementor-animation-grow elementor-repeater-item-aee4517" href="https://www.instagram.com/music_madbop/" target="_blank">
+						<span class="elementor-screen-only">Instagram</span>
+						<i class="fab fa-instagram"></i>					</a>
+				</div>
+							<div class="elementor-grid-item">
+					<a class="elementor-icon elementor-social-icon elementor-social-icon-reddit elementor-animation-grow elementor-repeater-item-d45506d" target="_blank">
+						<span class="elementor-screen-only">Reddit</span>
+						<i class="fab fa-reddit"></i>					</a>
+				</div>
+							<div class="elementor-grid-item">
+					<a class="elementor-icon elementor-social-icon elementor-social-icon-tiktok elementor-animation-grow elementor-repeater-item-109f8fe" href="https://www.tiktok.com/@musicmadbop" target="_blank">
+						<span class="elementor-screen-only">Tiktok</span>
+						<i class="fab fa-tiktok"></i>					</a>
+				</div>
+							<div class="elementor-grid-item">
+					<a class="elementor-icon elementor-social-icon elementor-social-icon-snapchat elementor-animation-grow elementor-repeater-item-319163c" href="https://www.snapchat.com/add/musicmadbop" target="_blank">
+						<span class="elementor-screen-only">Snapchat</span>
+						<i class="fab fa-snapchat"></i>					</a>
+				</div>
+							<div class="elementor-grid-item">
+					<a class="elementor-icon elementor-social-icon elementor-social-icon-discord elementor-animation-grow elementor-repeater-item-9820f5b" href="https://discord.gg/e5uU2fGKzC" target="_blank">
+						<span class="elementor-screen-only">Discord</span>
+						<i class="fab fa-discord"></i>					</a>
+				</div>
+					</div>
+				</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-15012793" data-id="15012793" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-a803a29 elementor-widget elementor-widget-heading" data-id="a803a29" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h4 class="elementor-heading-title elementor-size-default">JOIN THE COMMUNITY</h4>		</div>
+				</div>
+				<div class="elementor-element elementor-element-e013c6e elementor-widget elementor-widget-image" data-id="e013c6e" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-image">
+											<a href="https://discord.gg/e5uU2fGKzC" target="_blank">
+							<img width="512" height="164" src="{% static 'assets/images/joinusdiscord2.png' %}" class="elementor-animation-grow attachment-large size-large" alt="" loading="lazy" srcset="{% static 'assets/images/joinusdiscord2.png' %} 512w, https://www.madbop.com/storage/2021/03/joinusdiscord2-300x96.png 300w" sizes="(max-width: 512px) 100vw, 512px" style="width:100%;height:32.03%;max-width:512px;" />								</a>
+											</div>
+				</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+				<section class="elementor-section elementor-inner-section elementor-element elementor-element-6749ac20 elementor-section-content-middle elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="6749ac20" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-692cc7ea" data-id="692cc7ea" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-43b7e1fc elementor-widget elementor-widget-heading" data-id="43b7e1fc" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<p class="elementor-heading-title elementor-size-default">Copyright 2021 © Mad Bop. All rights Reserved to Twenty Seven Shop LTD. This site is protected by reCAPTCHA and the Google Privacy Policy and Terms of Service applies.</p>		</div>
+				</div>
+				<div class="elementor-element elementor-element-951cf66 elementor-widget elementor-widget-heading" data-id="951cf66" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<p class="elementor-heading-title elementor-size-default">The music is copyrighted © to the artists and record labels and is not owned by MadBop. </p>		</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+					</div>
+		</div>
+							</div>
+		</footer>
+				</div>
+		</div>
+		
+<a rel="nofollow" style="display:none;" href="https://www.madbop.com/?blackhole=adac3ed648" title="Do NOT follow this link or you will be banned from the site!">MadBop</a>
+<div id="cookie-law-info-bar" data-nosnippet="true"><span><div class="cli-bar-container cli-style-v2"><div class="cli-bar-message">We use cookies on our website to give you the most relevant experience by remembering your preferences and repeat visits. By clicking “Accept”, you consent to the use of ALL the cookies.</br><div class="wt-cli-ccpa-element"> <a href="javascript:void(0)" style="color:#333333;" class="wt-cli-ccpa-opt-out">Do not sell my personal information</a>.</div></div><div class="cli-bar-btn_container"><a role='button' tabindex='0' class="cli_settings_button" style="margin:0px 10px 0px 5px;" >Cookie settings</a><a role='button' tabindex='0' data-cli_action="accept" id="cookie_action_close_header"  class="medium cli-plugin-button cli-plugin-main-button cookie_action_close_header cli_action_button" style="display:inline-block; ">ACCEPT</a></div></div></span></div><div id="cookie-law-info-again" style="display:none;" data-nosnippet="true"><span id="cookie_hdr_showagain">Manage consent</span></div><div class="cli-modal" data-nosnippet="true" id="cliSettingsPopup" tabindex="-1" role="dialog" aria-labelledby="cliSettingsPopup" aria-hidden="true">
+  <div class="cli-modal-dialog" role="document">
+	<div class="cli-modal-content cli-bar-popup">
+	  	<button type="button" class="cli-modal-close" id="cliModalClose">
+			<svg class="" viewBox="0 0 24 24"><path d="M19 6.41l-1.41-1.41-5.59 5.59-5.59-5.59-1.41 1.41 5.59 5.59-5.59 5.59 1.41 1.41 5.59-5.59 5.59 5.59 1.41-1.41-5.59-5.59z"></path><path d="M0 0h24v24h-24z" fill="none"></path></svg>
+			<span class="wt-cli-sr-only">Close</span>
+	  	</button>
+	  	<div class="cli-modal-body">
+			<div class="cli-container-fluid cli-tab-container">
+	<div class="cli-row">
+		<div class="cli-col-12 cli-align-items-stretch cli-px-0">
+			<div class="cli-privacy-overview">
+				<h4>Privacy Overview</h4>				<div class="cli-privacy-content">
+					<div class="cli-privacy-content-text">This website uses cookies to improve your experience while you navigate through the website. Out of these, the cookies that are categorized as necessary are stored on your browser as they are essential for the working of basic functionalities of the website. We also use third-party cookies that help us analyze and understand how you use this website. These cookies will be stored in your browser only with your consent. You also have the option to opt-out of these cookies. But opting out of some of these cookies may affect your browsing experience.</div>
+				</div>
+				<a class="cli-privacy-readmore"  aria-label="Show more" tabindex="0" role="button" data-readmore-text="Show more" data-readless-text="Show less"></a>			</div>
+		</div>
+		<div class="cli-col-12 cli-align-items-stretch cli-px-0 cli-tab-section-container">
+												<div class="cli-tab-section">
+						<div class="cli-tab-header">
+							<a role="button" tabindex="0" class="cli-nav-link cli-settings-mobile" data-target="necessary" data-toggle="cli-toggle-tab">
+								Necessary							</a>
+							<div class="wt-cli-necessary-checkbox">
+                        <input type="checkbox" class="cli-user-preference-checkbox"  id="wt-cli-checkbox-necessary" data-id="checkbox-necessary" checked="checked"  />
+                        <label class="form-check-label" for="wt-cli-checkbox-necessary">Necessary</label>
+                    </div>
+                    <span class="cli-necessary-caption">Always Enabled</span> 						</div>
+						<div class="cli-tab-content">
+							<div class="cli-tab-pane cli-fade" data-id="necessary">
+								<p>Necessary cookies are absolutely essential for the website to function properly. These cookies ensure basic functionalities and security features of the website, anonymously.
+<table class="cookielawinfo-row-cat-table cookielawinfo-winter"><thead><tr><th class="cookielawinfo-column-1">Cookie</th><th class="cookielawinfo-column-3">Duration</th><th class="cookielawinfo-column-4">Description</th></tr></thead><tbody><tr class="cookielawinfo-row"><td class="cookielawinfo-column-1">__cfduid</td><td class="cookielawinfo-column-3">1 month</td><td class="cookielawinfo-column-4">The cookie is used by cdn services like CloudFare to identify individual clients behind a shared IP address and apply security settings on a per-client basis. It does not correspond to any user ID in the web application and does not store any personally identifiable information.</td></tr><tr class="cookielawinfo-row"><td class="cookielawinfo-column-1">cookielawinfo-checbox-analytics</td><td class="cookielawinfo-column-3">11 months</td><td class="cookielawinfo-column-4">This cookie is set by GDPR Cookie Consent plugin. The cookie is used to store the user consent for the cookies in the category "Analytics".</td></tr><tr class="cookielawinfo-row"><td class="cookielawinfo-column-1">cookielawinfo-checbox-functional</td><td class="cookielawinfo-column-3">11 months</td><td class="cookielawinfo-column-4">The cookie is set by GDPR cookie consent to record the user consent for the cookies in the category "Functional".</td></tr><tr class="cookielawinfo-row"><td class="cookielawinfo-column-1">cookielawinfo-checbox-others</td><td class="cookielawinfo-column-3">11 months</td><td class="cookielawinfo-column-4">This cookie is set by GDPR Cookie Consent plugin. The cookie is used to store the user consent for the cookies in the category "Other.</td></tr><tr class="cookielawinfo-row"><td class="cookielawinfo-column-1">cookielawinfo-checkbox-necessary</td><td class="cookielawinfo-column-3">11 months</td><td class="cookielawinfo-column-4">This cookie is set by GDPR Cookie Consent plugin. The cookies is used to store the user consent for the cookies in the category "Necessary".</td></tr><tr class="cookielawinfo-row"><td class="cookielawinfo-column-1">cookielawinfo-checkbox-performance</td><td class="cookielawinfo-column-3">11 months</td><td class="cookielawinfo-column-4">This cookie is set by GDPR Cookie Consent plugin. The cookie is used to store the user consent for the cookies in the category "Performance".</td></tr><tr class="cookielawinfo-row"><td class="cookielawinfo-column-1">viewed_cookie_policy</td><td class="cookielawinfo-column-3">11 months</td><td class="cookielawinfo-column-4">The cookie is set by the GDPR Cookie Consent plugin and is used to store whether or not user has consented to the use of cookies. It does not store any personal data.</td></tr></tbody></table></p>
+							</div>
+						</div>
+					</div>
+																	<div class="cli-tab-section">
+						<div class="cli-tab-header">
+							<a role="button" tabindex="0" class="cli-nav-link cli-settings-mobile" data-target="functional" data-toggle="cli-toggle-tab">
+								Functional							</a>
+							<div class="cli-switch">
+                        <input type="checkbox" id="wt-cli-checkbox-functional" class="cli-user-preference-checkbox"  data-id="checkbox-functional"  />
+                        <label for="wt-cli-checkbox-functional" class="cli-slider" data-cli-enable="Enabled" data-cli-disable="Disabled"><span class="wt-cli-sr-only">Functional</span></label>
+                    </div>						</div>
+						<div class="cli-tab-content">
+							<div class="cli-tab-pane cli-fade" data-id="functional">
+								<p>Functional cookies help to perform certain functionalities like sharing the content of the website on social media platforms, collect feedbacks, and other third-party features.
+</p>
+							</div>
+						</div>
+					</div>
+																	<div class="cli-tab-section">
+						<div class="cli-tab-header">
+							<a role="button" tabindex="0" class="cli-nav-link cli-settings-mobile" data-target="performance" data-toggle="cli-toggle-tab">
+								Performance							</a>
+							<div class="cli-switch">
+                        <input type="checkbox" id="wt-cli-checkbox-performance" class="cli-user-preference-checkbox"  data-id="checkbox-performance"  />
+                        <label for="wt-cli-checkbox-performance" class="cli-slider" data-cli-enable="Enabled" data-cli-disable="Disabled"><span class="wt-cli-sr-only">Performance</span></label>
+                    </div>						</div>
+						<div class="cli-tab-content">
+							<div class="cli-tab-pane cli-fade" data-id="performance">
+								<p>Performance cookies are used to understand and analyze the key performance indexes of the website which helps in delivering a better user experience for the visitors.
+</p>
+							</div>
+						</div>
+					</div>
+																	<div class="cli-tab-section">
+						<div class="cli-tab-header">
+							<a role="button" tabindex="0" class="cli-nav-link cli-settings-mobile" data-target="analytics" data-toggle="cli-toggle-tab">
+								Analytics							</a>
+							<div class="cli-switch">
+                        <input type="checkbox" id="wt-cli-checkbox-analytics" class="cli-user-preference-checkbox"  data-id="checkbox-analytics"  />
+                        <label for="wt-cli-checkbox-analytics" class="cli-slider" data-cli-enable="Enabled" data-cli-disable="Disabled"><span class="wt-cli-sr-only">Analytics</span></label>
+                    </div>						</div>
+						<div class="cli-tab-content">
+							<div class="cli-tab-pane cli-fade" data-id="analytics">
+								<p>Analytical cookies are used to understand how visitors interact with the website. These cookies help provide information on metrics the number of visitors, bounce rate, traffic source, etc.
+</p>
+							</div>
+						</div>
+					</div>
+																	<div class="cli-tab-section">
+						<div class="cli-tab-header">
+							<a role="button" tabindex="0" class="cli-nav-link cli-settings-mobile" data-target="advertisement" data-toggle="cli-toggle-tab">
+								Advertisement							</a>
+							<div class="cli-switch">
+                        <input type="checkbox" id="wt-cli-checkbox-advertisement" class="cli-user-preference-checkbox"  data-id="checkbox-advertisement"  />
+                        <label for="wt-cli-checkbox-advertisement" class="cli-slider" data-cli-enable="Enabled" data-cli-disable="Disabled"><span class="wt-cli-sr-only">Advertisement</span></label>
+                    </div>						</div>
+						<div class="cli-tab-content">
+							<div class="cli-tab-pane cli-fade" data-id="advertisement">
+								<p>Advertisement cookies are used to provide visitors with relevant ads and marketing campaigns. These cookies track visitors across websites and collect information to provide customized ads.
+</p>
+							</div>
+						</div>
+					</div>
+																	<div class="cli-tab-section">
+						<div class="cli-tab-header">
+							<a role="button" tabindex="0" class="cli-nav-link cli-settings-mobile" data-target="others" data-toggle="cli-toggle-tab">
+								Others							</a>
+							<div class="cli-switch">
+                        <input type="checkbox" id="wt-cli-checkbox-others" class="cli-user-preference-checkbox"  data-id="checkbox-others"  />
+                        <label for="wt-cli-checkbox-others" class="cli-slider" data-cli-enable="Enabled" data-cli-disable="Disabled"><span class="wt-cli-sr-only">Others</span></label>
+                    </div>						</div>
+						<div class="cli-tab-content">
+							<div class="cli-tab-pane cli-fade" data-id="others">
+								<p>Other uncategorized cookies are those that are being analyzed and have not been classified into a category as yet.
+</p>
+							</div>
+						</div>
+					</div>
+										</div>
+	</div>
+</div>
+	  	</div>
+	  	<div class="cli-modal-footer">
+			<div class="wt-cli-element cli-container-fluid cli-tab-container">
+				<div class="cli-row">
+					<div class="cli-col-12 cli-align-items-stretch cli-px-0">
+						<div class="cli-tab-footer wt-cli-privacy-overview-actions">
+						
+															<a id="wt-cli-privacy-save-btn" role="button" tabindex="0" data-cli-action="accept" class="wt-cli-privacy-btn cli_setting_save_button wt-cli-privacy-accept-btn cli-btn">SAVE & ACCEPT</a>
+													</div>
+												<div class="wt-cli-ckyes-footer-section">
+							<div class="wt-cli-ckyes-brand-logo">Powered by <a target="_blank" href="https://www.cookieyes.com/"><img src="https://www.madbop.com/core/modules/7e4609f00f/public/images/logo-cookieyes.svg"></a></div>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+  </div>
+</div>
+</html>

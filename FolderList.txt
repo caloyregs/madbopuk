@@ -1,0 +1,5 @@
+.history
+contents
+madbop
+media
+static
